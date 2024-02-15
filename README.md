@@ -17,6 +17,8 @@ This repository hosts the configuration files and setup instructions for the Gra
 4. Start the server using the appropriate startup command for your operating system. For Windows users, run the `start.bat` file, where you can set the RAM size by editing the file. For other operating systems, use the equivalent startup command.
 5. Once the server is running, players can join using the server IP address.
 
+### *Note* Some of the maps dosent have spawns or some of the maps Corrupted
+
 *Note*: The Gravity Empire mod files and the plugins mentioned in the "Plugins Used" section are not required. You don't need to do anything with the plugin folder. However, you may need to change the language configuration from Hungarian to English within the mod configuration files for the optimal gameplay experience. You can do this by modifying the language configuration settings yourself, as the original developer was too lazy to do it.
 
 ### Developers
