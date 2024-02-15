@@ -1,0 +1,19 @@
+# This is the server motd.
+Server-MOTD:
+  Line-1: '&c&l►&3&l----------&d&lGravity&f&lEmpire&4&l&3&l----------&c&l◄'
+  Line-2: '    &4&l☢&6&lEgy neked ki talált Pvp szerver&4&l☢'
+# The motd of the player when they join in.
+JoinGame-MOTD:
+  Enabled: true
+# Check forum for placeholders.
+# Supported for PlaceholderAPI placeholders.
+# Server icon.
+Custom-Server-Icon:
+  # Set to true will load image from motd folder.
+  Enabled: false
+  # Make sure it's 64 x 64 pixels with png format.
+  Image: server-icon.png
+# The maximum players of the server.
+Server-Maximum-Players:
+  Modify: true
+  Maximum-Players: 200

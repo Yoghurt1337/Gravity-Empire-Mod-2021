@@ -1,0 +1,22 @@
+lastAccountName: Fury
+timestamps:
+  login: 1630159592772
+  lastteleport: 1628966847715
+  logout: 1630159676101
+ipAddress: 149.200.24.96
+lastlocation:
+  world: world
+  x: 1028.5955704809537
+  y: 47.166109260938214
+  z: -142.86654188714303
+  yaw: -71.75022
+  pitch: 27.14999
+logoutlocation:
+  world: world
+  x: 1005.3360456889609
+  y: 44.5
+  z: -143.54101520842494
+  yaw: -96.05001
+  pitch: 4.3500066
+afk: false
+homes: {}

@@ -1,0 +1,44 @@
+#                                         #
+#                PvPLevels                #
+#                   by                    #
+#                MathiasMC                #
+#  Any ideas for the plugin or need help? #
+#           contact me on spigot          #
+#                                         #
+default:
+  # executor for get xp section in execute.yml
+  execute: default
+  '1':
+    prefix: '&7[&bDefault&7] [&b1&7]'
+    suffix: ''
+    group: 'Good'
+    execute: default
+    # start-level must be 0 xp
+    xp: 0
+  '2':
+    prefix: '&7[&bDefault&7] [&b2&7]'
+    suffix: ''
+    group: 'Better'
+    execute: default
+    xp: 150
+  '3':
+    prefix: '&7[&bDefault&7] [&b3&7]'
+    suffix: ''
+    group: 'Super'
+    execute: default
+    xp: 300
+  '4':
+    prefix: '&7[&bDefault&7] [&b4&7]'
+    suffix: ''
+    group: 'Pro'
+    execute: default
+    xp: 400
+  '5':
+    prefix: '&7[&bDefault&7] [&b5&7]'
+    suffix: ''
+    group: 'Master'
+    # override top executor for get xp section in execute.yml
+    override: default-last
+    # The execute: executor (this is only the level.up and level.down)
+    execute: default-last
+    xp: 500

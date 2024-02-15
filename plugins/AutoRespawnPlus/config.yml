@@ -1,0 +1,10 @@
+# AutoRespawnPlus by iShadey
+# 
+# blocked-worlds: Put any worlds where AutoRespawnPlus should not operate
+# delayBeforeRespawnTicks@ Delay before the user will be respawned automatically. Set to 0 to disable.
+
+enabled: true
+blocked-worlds:
+- BlockedWorld1
+- BlockedWorld2
+delayBeforeRespawnTicks: 0

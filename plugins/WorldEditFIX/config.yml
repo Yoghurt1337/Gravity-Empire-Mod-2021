@@ -1,0 +1,8 @@
+Message: '&cDo not try'
+ReloadMSG: '&aReload complete.'
+WarnSTAFF: true
+WarnMessage: '&c&l(!) &a%player% &7tried to crash server!'
+WarnPermission: worldeditfix.announce
+Punishment: false
+PunishmentCommand: kick %player% &6tried to $ncrash server
+WRLPermission: worldeditfix.wrl

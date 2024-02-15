@@ -1,0 +1,20 @@
+lastAccountName: NightYouth1337
+timestamps:
+  login: 1707834619662
+  logout: 1707834530451
+ipAddress: 127.0.0.1
+logoutlocation:
+  world: world
+  x: 1039.281473153644
+  y: 47.0
+  z: -142.60495824940872
+  yaw: -269.15012
+  pitch: 0.44999316
+lastlocation:
+  world: world
+  x: 929.087850207046
+  y: 46.0
+  z: -143.31858501627374
+  yaw: -248.4129
+  pitch: 65.30829
+afk: false

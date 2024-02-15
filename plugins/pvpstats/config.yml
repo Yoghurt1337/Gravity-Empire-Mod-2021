@@ -1,0 +1,45 @@
+#Configuration for PvPStats
+#NOTE: DON'T REMOVE ANY '', OTHERWISE, THE PLUGIN MAY BREAK.
+#If you mess something up in the config.yml, simply delete it, and a new one will generate.
+
+#Recommended that you leave this to true.
+UpdateReminder: true
+
+#Config PlaceHolders. Make Sure that they are spelled and capitalized exactly the same as these.
+#{PLAYER} - PLAYERS NAME
+#{KILLS} - KILL COUNT
+#{DEATHS} - DEATH COUNT
+#{KILLSTREAK} - KILLSTREAK COUNT
+#{KDR} - KDR COUNT
+
+#-------------------------------------------------------------
+#MESSAGES - These messages will show once the codition/command is met/typed.
+#-------------------------------------------------------------
+
+#/Stats
+StatsMessage:
+  - '&6Statisztikáid:'
+  - '&3* &fÖlések: &6{KILLS}'
+  - '&3* &fHalálok: &6{DEATHS}'
+  - '&3* &fKillstreak: &6{KILLSTREAK}'
+  - '&3* &fKD: &6{KDR}'
+
+
+#/Stats {Player}
+StatsMessageOther:
+  - "&6{PLAYER}' statisztikái"
+  - '&3* &Ölések: &6{KILLS}'
+  - '&3* &fHalálok: &6{DEATHS}'
+  - '&3* &fKillstreak: &6{KILLSTREAK}'
+  - '&3* &fKD: &6{KDR}'
+  
+
+#Additional Placeholders for Kill: and Death: only!
+#{OTHERPLAYER} - The person who killed you/the person you killed.
+#When Someone dies/gets a kill:
+Kill:
+  - ''
+  - ''
+Death:
+  - ''
+  - ''

@@ -1,0 +1,26 @@
+mine:
+  ==: com.koletar.jj.mineresetlite.Mine
+  resetDelay: 0
+  surface: ''
+  maxZ: -123
+  maxY: 45
+  maxX: 935
+  ignoreLadders: false
+  fillMode: false
+  world: world
+  minY: 32
+  resetWarnings: []
+  minX: 909
+  composition:
+    '57:0': 0.1
+    '41:0': 0.2
+    '42:0': 0.35
+    '133:0': 0.05
+    '152:0': 0.3
+  name: pvpbanya
+  resetClock: 0
+  minZ: -166
+  isSilent: false
+  tpY: -1
+  tpX: 0
+  tpZ: 0

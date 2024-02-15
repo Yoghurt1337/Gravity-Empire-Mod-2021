@@ -1,0 +1,11 @@
+scoreboard: # Max 15 lines
+  title: '&8&l>>&5&lGravity&fEmpire&8&l<<'
+  lines:
+    - '§6Rangod:'
+    - '§6%vault_rank%'
+    - '§cKilleid:'
+    - '§c%killstats_kills%'
+    - '§dHalálok:'
+    - '§d%killstats_deaths%'
+    - '§aEgyenleged:'
+    - '§a%vault_eco_balance%'

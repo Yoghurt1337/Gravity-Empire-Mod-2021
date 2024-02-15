@@ -1,0 +1,127 @@
+AdminAlerts:
+  Placeholder: "%animation% &7\xbb Nem észlelhető &cBOT &7támadás. %speedColor%%playerspersecond%&7/%speedColor%cps"
+  GeoCheck: "&f%name% &7\xbb %checkname% &7| %speedColor%%playerspersecond%&7/%speedColor%cps"
+  ServerListPing: "&f%name% &7\xbb %checkname% &7| %speedColor%%playerspersecond%&7/%speedColor%cps"
+  SmartHeuristic: "&f%name% &7\xbb %checkname% &7| %speedColor%%playerspersecond%&7/%speedColor%cps"
+  MaxPlayersPerIP: "&f%name% &7\xbb %checkname% &7| %speedColor%%playerspersecond%&7/%speedColor%cps"
+  Nameprefix: "&f%name% &7\xbb %checkname% &7| %speedColor%%playerspersecond%&7/%speedColor%cps"
+  ForceRejoin: "&f%name% &7\xbb %checkname% &7| %speedColor%%playerspersecond%&7/%speedColor%cps"
+  ProxyDetection: "&f%name% &7\xbb %checkname% &7| %speedColor%%playerspersecond%&7/%speedColor%cps"
+  BlacklistCheck: "&f%name% &7\xbb %checkname% &7| %speedColor%%playerspersecond%&7/%speedColor%cps"
+  MaxConnectionsPerSecond: "&f%name% &7\xbb %checkname% &7| %&8country% |&7 %speedColor%%playerspersecond%&7/%speedColor%cps"
+  MaxAccountsPerIP: "&f%name% &7\xbb %checkname% &7| %speedColor%%playerspersecond%&7/%speedColor%cps"
+  Whitelisted: "&c&lFever&7&lMC &8» &c%name% &7automatikusan bekerült a fehér listába"
+
+  DeluxeAI:
+    Spike: "&c&lFever&7&lMC &8» &e%highestSample% &7 -> &e%botsPerSecond% &7(&a%increase%%&7) &7bots per second"
+    BossBarUp: "&a↑ &7- &e%botsPerSecond%§7/&ecps &7- &a+%acceleration%"
+    BossBarDown: "&c↓ &7- &e%botsPerSecond%§7/&ecps &7- &a+%acceleration%"
+    Title:
+      Line1: "&a%amount% megszakított csatlakozás"
+      Line2: "&bA botvédelem dolgozik... %animation%"
+KickMessages:
+  ServerListPing:
+    - "&c&lFever&7&lMC &8»"
+    - "&7Ki lettél rúgva!"
+    - "  "
+    - "&7Kérlek add hozzá a szervert, a szerverlistához!"
+    - "&eTöbbjátékos mód &7» &eSzerver hozzáadása &7» &eKiszolgáló &7» &eplay.fevermc.hu &7vagy &efevermc.clan.hu"
+    - "&eVárd meg, még megjelenítődik a MOTD!"
+    - "&c&lFever&7&lMC &fTeam"
+    - "&7Kattints a frissítésre, és próbálja újra!"
+  GeoCheck:
+    - "&c&lFever&7&lMC &8»"
+    - "&7Ki lettél rúgva!"
+    - "  "
+    - "&7Az országod nincs engedélyezve!"
+    - "&c&lFever&7&lMC &cTeam"
+    - "&7Kérlek írj Discord &7csoportunkba!"
+    - "&ediscord.io/fevermcdc"
+  MaxPlayersPerIP:
+    - "&c&lFever&7&lMC &8»"
+    - "&7Ki lettél rúgva!"
+    - "  "
+    - "&7Túl sok játékos csatlakozik a hálózatodról!"
+    - "&c&lFever&7&lMC &fTeam"
+  BlacklistCheck:
+    - "&c&lFever&7&lMC &8»"
+    - "&7Ki lettél rúgva!"
+    - "  "
+    - "&7Az IP címed tiltva a szerveren!"
+    - "&3Inflexity &fTeam"
+  ProxyDetection:
+    - "&3Inflexity &8»"
+    - "&7Ki lettél rúgva!"
+    - "  "
+    - "&7Az IP címed proxyként észlelve!"
+    - "&c&lFever&7&lMC &fTeam"
+  MaxConnectionsPerSecond:
+    - "&c&lFever&7&lMC &8»"
+    - "&7Ki lettél rúgva!"
+    - "  "
+    - "&7Túl gyorsan csatlakozol!"
+    - "&c&lFever&7&lMC &fTeam"
+  MaxAccountsPerIP:
+    - "&c&lFever&7&lMC &8»"
+    - "&7Ki lettél rúgva!"
+    - "  "
+    - "&7Túl sok accountal csatlakozol!!"
+    - "&c&lFever&7&lMC &fTeam"
+  SmartHeuristic:
+    - "&c&lFever&7&lMC &8»"
+    - "&7Ki lettél rúgva!"
+    - "  "
+    - "&7BOTként lettél észlelve! Csatlakozz újra!"
+    - "&c&lFever&7&lMC &fTeam"
+  Nameprefix:
+    - "&3Inflexity &8»"
+    - "&7Ki lettél rúgva!"
+    - "  "
+    - "&7You've been detected as bot."
+    - "&3Inflexity &fTeam"
+  ForceRejoin:
+    - "&c&lFever&7&lMC &8»"
+    - "&7Ki lettél rúgva!"
+    - "  "
+    - "&7Megerősítjük a kapcsolatot!"
+    - "&7Kérlek csatlakozz újra!"
+    - "&c&lFever&7&lMC &fTeam"
+
+Commands:
+  Help:
+    - "&e-&6-&e-&6-&e-&6-&e-&6-&e-&6-&e-&6-&e-&6-&e-&6-&e-&6-&e-&6-&e-&6-&e-&6-&e-&6-&e-&6-&e-&6-&e-&6-&e-&6-&e-&6-&e-&6-&e-&6-&e-&6-&e-&6-"
+    - "&c&lFever&7&lMC &8» &7/abd toggle <játékos> &8» &fÉrtesítést kap az adott személy, a botolásról"
+    - "&c&lFever&7&lMC &8» &7/abd togglebossbar &8» &fBossbar kikapcsolása"
+    - "&c&lFever&7&lMC &8» &7/abd about &e» &fInformációk megtekintése"
+    - "&c&lFever&7&lMC &8» &7/abd reload &8» &fPlugin frissítése"
+    - "&c&lFever&7&lMC &8» &7/abd blacklist add/remove (Player / IP) &8» &fJátékos feketelistára tevése."
+    - "&c&lFever&7&lMC &8» &7/abd whitelist add/remove (Player) &8» &fJátékos hozzáadása a fehérlistához"
+    - "&e-&6-&e-&6-&e-&6-&e-&6-&e-&6-&e-&6-&e-&6-&e-&6-&e-&6-&e-&6-&e-&6-&e-&6-&e-&6-&e-&6-&e-&6-&e-&6-&e-&6-&e-&6-&e-&6-&e-&6-&e-&6-&e-&6-"
+  NoPermission: "&8[&4!&8] &fIsmeretlen parancs."
+  PlayerNeeded: "Ez a parancs nem futtatható a konzolból"
+  Toggle:
+    Enabled: "&7Engedélyezted a &cBOT &7értesítéseket neki:&c %player%"
+    Disabled: "&7Értesítés kikapcsolva neki: &c%player%"
+    NotOnline: "A játékos nem online!"
+    Other:
+      Enabled: "Mostmár értesítést kapsz, ha botolják a szervert!"
+      Disabled: "Többé nem kapsz értesítést a BOT védelemtől."
+    BossBar:
+      Enabled: "You now receive the BossBar"
+      Disabled: "You not longer receive the BossBar"
+  Reload: "You have successfully reloaded the configuration."
+  Blacklist:
+    Add:
+      AlreadyBlacklisted: "Ez az IP már blokkolva van"
+      Added: "IP blokkolva"
+    Remove:
+      NotBlacklisted: "Az IP nem szerepel a feketelistán"
+      Removed: "IP cím törölve a feketelistáról."
+    NotExists: "A játékos nem található"
+  Whitelist:
+    Add:
+      AlreadyWhitelisted: "Ez a játékos már hozzá van adva a fehérlistához!"
+      Added: "Játékos sikeresen hozzáadva a fehérlistához!"
+    Remove:
+      NotWhitelisted: "Ennek a játékosnak nincs engedélye a fehérlistához!"
+      Removed: "Ez a játékos már nincs a fehérlistán!"

@@ -1,0 +1,22 @@
+lastAccountName: LilPeep1337
+timestamps:
+  login: 1629909133408
+  logout: 1629909155108
+  lastteleport: 1629893044928
+ipAddress: 80.98.122.175
+logoutlocation:
+  world: world
+  x: 1039.281473153644
+  y: 47.0
+  z: -142.60495824940872
+  yaw: -274.2501
+  pitch: 2.5499933
+afk: false
+lastlocation:
+  world: world
+  x: 974.4196777106765
+  y: 51.20171115358775
+  z: -144.1481384296428
+  yaw: -89.25488
+  pitch: 15.749993
+money: '0'

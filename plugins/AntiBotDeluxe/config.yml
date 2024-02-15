@@ -1,0 +1,245 @@
+#                 _   _ ____        _   _____       _
+#     /\         | | (_)  _ \      | | |  __ \     | |
+#    /  \   _ __ | |_ _| |_) | ___ | |_| |  | | ___| |_   ___  _____
+#   / /\ \ | '_ \| __| |  _ < / _ \| __| |  | |/ _ \ | | | \ \/ / _ \
+#  / ____ \| | | | |_| | |_) | (_) | |_| |__| |  __/ | |_| |>  <  __/
+# /_/    \_\_| |_|\__|_|____/ \___/ \__|_____/ \___|_|\__,_/_/\_\___|
+#
+
+
+###############################
+##            Info           ##
+###############################
+
+# FAQ (Offline): https://antibotdeluxe.com/webpanel/faq
+# Web Panel (Offline): https://antibotdeluxe.com/webpanel/
+# Discord: https://discord.gg/xTAzMCx
+
+# If you require support, join our Discord as that is the ONLY location that we provide it.
+# Anonymous statistics are sent to bStats.
+
+# Thank you for purchasing AntiBotDeluxe.
+# The default config requires very little configuring to make it fit your server.
+
+Version: 10
+
+
+###############################
+##          General          ##
+###############################
+
+General:
+  # The prefix of all messages.
+  Prefix: '&c&lFever&7&lMC &8» &f'
+  # Enable or disable the AntiBotDeluxe log. If this is disabled, you will not receive support, as essential data is contained here.
+  Log: true
+  # You must enable this if you use a modified proxy, eg Waterfall, Hexacord or Travertine.
+  Log4J: false
+  # If enabled the Console will be spammed with for you useless Developer stuff
+  Debug: false
+  # Should we show a animation while there is no attack?
+  Animation: true
+  # Let Whitelisted players pass
+  Whitelist: true
+
+  ConsoleFilter:
+    - "logged in with entity id"
+    - "com.mojang.authlib.GameProfile@"
+    - "lost connection"
+    - "timed"
+    - "reset"
+    - "UUID of player"
+    - "InitialHandler"
+    - "UpstreamBridge has disconnected"
+
+  AutoWhitelist:
+    Enabled: true
+    ActTime: 240
+
+Storage:
+  # Options Available: MySQL, FlatFile
+  # If you are only running AntiBotDeluxe on one server, flat-file is recommended.
+  Mode: FlatFile
+
+  # Here you can set how the configuration file should update
+  # Available options: LIVE, FREQUENTLY, NEVER
+  # FREQUENTLY will cause a minutely update, when set on NEVER the use of /ab reload is needed.
+  ConfigUpdate: FREQUENTLY
+
+  MySQL:
+    Host: '127.0.0.1'
+    Username: 'root'
+    Password: ''
+    Database: antibotdeluxe
+    MaximumPoolSize: 10
+    MinimumIdle: 10
+    MaximumLifetime: 1800000
+    ConnectionTimeOut: 5000
+
+###############################
+##            Geo            ##
+###############################
+
+Geographical:
+  Mode: Blacklist
+  Countries:
+    - "Brazil"
+    - "Indonesia"
+    - "China"
+    - "India"
+    - "South Africa"
+    - "Taiwan"
+
+Firewall:
+  Enabled: true
+
+  # apt install ipset
+  Firewall: IPSet
+  FirewallSettings:
+    IPSet:
+      # How long IPs are blocked
+      Timeout: 3600
+
+  AddCommand: "sudo ipset -A proxies %ip%"
+  RemoveCommand: "sudo ipset -D proxies %ip%"
+
+  # Flush all rules only added by AntiBotDeluxe on every plugin load.
+  # Disabled by default to keep rules for following attacks.
+  Flush: false
+
+  # Blacklist a IP if they get blacklisted.
+  # This wont add IP's that are downloaded
+  # This option allows efficient mitigation of attacks and is recommended.
+  AddWhenBlacklisted: true
+
+ProxyScraper:
+  Enabled: false
+  Threads: 350
+
+  # Toggle proxy types to scrape for.
+  # SOCKS is more common for bot attacks.
+  SearchFor:
+    HTTP: true
+    SOCKS: true
+
+
+###############################
+##          Checks           ##
+###############################
+
+Checks:
+  # This is the order of how checks work. You can comment them out here to disable them but is not recommended for blocking bots.
+  # The default order is highly recommended to keep.
+
+  Priority:
+    ServerListPing:
+      Condition: "ConnectionsPerSecond > 10"
+    Nameprefix:
+      Condition: "ConnectionsPerSecond > -1"
+    SmartHeuristic:
+      Condition: "ConnectionsPerSecond > 5"
+    BlacklistCheck:
+      Condition: "ConnectionsPerSecond > -1"
+    MaxAccountsPerIP:
+      Condition: "ConnectionsPerSecond > -1"
+    ForceRejoin:
+      Condition: "ConnectionsPerSecond > 1"
+    MaxPlayersPerIP:
+      Condition: "ConnectionsPerSecond > -1"
+    GeoCheck:
+      Condition: "ConnectionsPerSecond > -1"
+    ProxyDetection:
+      Condition: "ConnectionsPerSecond > -1"
+
+  # This is looking on how often a IP tries to connect with different names in a specific time, other then MaxPlayersPerIP this is not checking the online players
+  MaxAccountsPerIP:
+    Value: 3
+    Action: Blacklist
+
+  MaxPlayersPerIP:
+    Value: 2
+
+  Nameprefix:
+    Blockprefix:
+      - "MCBot_"
+      - "MCSpam_"
+      - "Bot_"
+      - "MCStorm_"
+      - "MCSTORM"
+
+  # Define the percentage of SmartHeuristic
+  # The first value has to be reached if its very likely a bot
+  # The second value has to be reached if its not that likely a bot
+  # Therefore a higher percentage needs to be reached.
+  SmartHeuristics:
+    Percentage: 90.0
+    Unlikely:
+      Percentage: 99.0
+
+  # Enable or disable checks to use the hold dynamic mode for.
+  # If you do not know what this is, leave it alone.
+  Hold:
+    - MaxPlayersPerSecond
+    - MaxAccountsPerIP
+###############################
+##         Blacklist         ##
+###############################
+
+Blacklist:
+  # Configure the sites where blacklisted IPs are loaded from.
+  # The default settings are accurately chosen to be efficient and with few false positives.
+  Synchronization:
+    SyncBlacklist: false
+    DirectAccess:
+      - "http://lists.blocklist.de/lists/all.txt"
+      - "http://cinsscore.com/list/ci-badguys.txt"
+      - "https://www.stopforumspam.com/downloads/toxic_ip_cidr.txt"
+      - "http://blocklist.greensnow.co/greensnow.txt"
+      - "http://myip.ms/files/blacklist/csf/latest_blacklist.txt"
+    ClickAccess:
+      - "http://proxy-daily.com/"
+      - "http://www.sslproxies24.top/"
+      - "http://socksproxylist24.blogspot.ro/"
+
+###############################
+##           Proxy           ##
+###############################
+
+# These sites check if an account is a proxy.
+# The condition just disables the site if requirements aren't reached.
+#
+# HIGHLY RECOMMENDED: Register on https://proxycheck.io/ and get a free API KEY !
+# Then replace the URL like this:
+# URL: "http://proxycheck.io/v2/%ip%?key=API KEY HERE&vpn=1"
+
+
+ProxySettings:
+  Sites:
+    '1':
+      URL: "http://proxycheck.io/v2/%ip%?vpn=1"
+      Keyword: "\"yes\""
+      Action: BLACKLIST
+    '2':
+      URL: "http://check.getipintel.net/check.php?ip=%ip%&format=json&contact=hello@yourmail.com&flags=m"
+      Keyword: "\"result\":\"1\""
+      Action: BLACKLIST
+    '3':
+      URL: "http://api.vpnblocker.net/v2/json/%ip%"
+      Keyword: "\"host-ip\": true"
+      Action: BLACKLIST
+    '4':
+      URL: "http://www.stopforumspam.com/api?ip=%ip%"
+      Keyword: "<appears>yes</appears>"
+      Action: KICK
+
+
+###############################
+##          Locale           ##
+###############################
+
+Locale:
+  # Available presets are English (EN), French (FR), German* (DE), Italian* (IT), Dutch* (NL), Turkish* (TU), Romanian* (RO),
+  # Messages are configurable over in the messages_locale.yml.
+  # You can enter the name of your presence here.
+  # * = Currently in progress - Can not be used
+  Preset: EN

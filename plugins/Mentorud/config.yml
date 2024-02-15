@@ -1,0 +1,16 @@
+
+                                                   ######################
+                                                   #                    #
+                                                   #      Mentőrúd      #
+                                                   #                    #
+                                                   ######################
+#Készítette: Coxy_Senpai
+#Verzió: 1.5
+#Itt tudod szerkeszteni a szövegeket
+
+
+
+item:
+  name: '&5Mentőrúd'
+  lore: '&eHalálkor nem vesznek el a tárgyaid.'
+savemessage: '&eMeghaltál de volt nálad mentőrúd, ezért nem vesztek el a tárgyaid'

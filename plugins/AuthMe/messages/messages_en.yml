@@ -1,0 +1,138 @@
+# Registration
+'registration':
+    'disabled': '&d&lGravity&f&lEmpire &8» &7Regisztráció letiltva!'
+    'name_taken': '&d&lGravity&f&lEmpire &8» &7Ez a játékosnév már regisztrálva van!'
+    'register_request': '&d&lGravity&f&lEmpire &8» &7Kérlek Regisztrálj: &c/register <jelszó> <jelszó ismét>'
+    'command_usage': '&d&lGravity&f&lEmpire &8» &7Használat: /register &c<jelszó> <jelszó ismét>'
+    'reg_only': '&d&lGravity&f&lEmpire &8» &7Csak regisztrált játékosok tudnak csatlakozni a szerverhez! Kérlek kattints a  http://example.com weboldalra és regisztrálj!'
+    'success': '&d&lGravity&f&lEmpire &8» &7Sikeres regisztráció.'
+    'kicked_admin_registered': '&d&lGravity&f&lEmpire &8» Adminisztrátor által regisztrálva lettél; kérlek lépj be újra!'
+# Password errors on registration
+'password':
+    'match_error': '&d&lGravity&f&lEmpire &8» &7A két jelszó nem egyezik!'
+    'name_in_password': '&d&lGravity&f&lEmpire &8» &7Nem használhatod a felhasználóneved jelszónak, kérlek válassz másikat...'
+    'unsafe_password': '&d&lGravity&f&lEmpire &8» &7A választott jelszó nem biztonságos, kérlek válassz másikat...'
+    'forbidden_characters': '&d&lGravity&f&lEmpire &8» &7A választott jelszó nem engedélyezett karaktereket tartalmaz. Engedélyezett karakterek: %valid_chars'
+    'wrong_length': '&d&lGravity&f&lEmpire &8» A jelszavad nem éri el a minimális hosszúságot!'
+# Login
+'login':
+    'command_usage': '&d&lGravity&f&lEmpire &8» &7Bejelentkezés: &c/login <jelszó>'
+    'wrong_password': '&d&lGravity&f&lEmpire &8» &7Hibás jelszó!'
+    'success': '&d&lGravity&f&lEmpire &8» &7Sikeresen beléptél!'
+    'login_request': '&d&lGravity&f&lEmpire &8» &7Kérlek jelentkezz be: &c/login <jelszó>'
+    'timeout_error': '&d&lGravity&f&lEmpire &8» &7Bejelentkezési időtúllépés!'
+# Errors
+'error':
+    'denied_command': '&d&lGravity&f&lEmpire &8» &7Amíg nem vagy bejelentkezve, nem használhatod ezt a parancsot!'
+    'denied_chat': '&d&lGravity&f&lEmpire &8» &7Amíg nem vagy bejelentkezve, nem használhatod a csevegőt!'
+    'unregistered_user': '&d&lGravity&f&lEmpire &8» &7Ez a felhasználó nincs regisztrálva!'
+    'not_logged_in': '&d&lGravity&f&lEmpire &8» &7Nem vagy bejelentkezve!'
+    'no_permission': '&d&lGravity&f&lEmpire &8» &77Nincs jogod ehhez!'
+    'unexpected_error': '&d&lGravity&f&lEmpire &8» &7Hiba lépett fel! Lépj kapcsolatba a szerver tulajával sürgősen!'
+    'max_registration': '&d&lGravity&f&lEmpire &8» &cElérted a maximálisan beregisztrálható karakterek számát. (%reg_count/%max_acc %reg_names)!'
+    'logged_in': '&d&lGravity&f&lEmpire &8» &7Már be vagy jelentkezve!'
+    'kick_for_vip': '&d&lGravity&f&lEmpire &8» &7VIP játékos csatlakozott a szerverhez!'
+    'kick_unresolved_hostname': '&cAn error occurred: unresolved player hostname!'
+    'tempban_max_logins': '&d&lGravity&f&lEmpire &8» &cIdeiglenesen ki lettél tiltva mert túl sok alkalommal rontottad el a jelszavad!'
+# AntiBot
+'antibot':
+    'kick_antibot': 'Az AntiBot védelem bekapcsolva! Kérlek várj pár percet mielőtt csatlakozol.'
+    'auto_enabled': '&4[AntiBot] Az AntiBot védelem bekapcsolt, mert a megszabott időn belül több felhasználó csatlakozott!'
+    'auto_disabled': '&2[AntiBot] Az AntiBot kikapcsol %m perc múlva!'
+# Unregister
+'unregister':
+    'success': '&d&lGravity&f&lEmpire &8» &7Regisztráció sikeresen törölve!'
+    'command_usage': '&d&lGravity&f&lEmpire &8» &7Használat: /unregister <jelszó>'
+# Other messages
+'misc':
+    'account_not_activated': '&d&lGravity&f&lEmpire &8» &7A felhasználód aktiválása még nem történt meg, ellenőrizd a megadott emailed!'
+    'password_changed': '&&d&lGravity&f&lEmpire &8» &7Jelszó sikeresen megváltoztatva!'
+    'logout': '&d&lGravity&f&lEmpire &8» &7Sikeresen kijelentkeztél!'
+    'reload': '&d&lGravity&f&lEmpire &8» &7Beállítások és adatbázis újratöltve!'
+    'usage_change_password': '&d&lGravity&f&lEmpire &8» Használat: /changepassword <régi jelszó> <új jelszó>'
+    'accounts_owned_self': '&d&lGravity&f&lEmpire &8» &7%count db regisztrációd van:'
+    'accounts_owned_other': '&d&lGravity&f&lEmpire &8» &7A %name nevű játékosnak, %count db regisztrációja van:'
+# Session messages
+'session':
+    'valid_session': '&d&lGravity&f&lEmpire &8» &7A megadott időkereten belül csatlakoztál vissza így a rendszer automatikusan beléptetett.'
+    'invalid_session': '&d&lGravity&f&lEmpire &8» &7Az IP címed megváltozott, ezért a visszacsatlakozási időkereted lejárt.'
+# Error messages when joining
+'on_join_validation':
+    'same_ip_online': '&d&lGravity&f&lEmpire &8» &cMár valaki csatlakozott a szerverhez ezzel az IP címmel!'
+    'same_nick_online': '&d&lGravity&f&lEmpire &8» &4Ezzel a játékosnévvel már játszanak a szerveren.'
+    'name_length': '&d&lGravity&f&lEmpire &8» &7A felhasználóneved túl hosszú, vagy túl rövid! Válassz másikat!'
+    'characters_in_name': '&d&lGravity&f&lEmpire &8» &7A felhasználóneved nem engedélyezett karaktereket tartalmaz. Engedélyezett karakterek: %valid_chars'
+    'kick_full_server': '&d&lGravity&f&lEmpire &8» &7A szerver megtelt, próbálj csatlakozni később!'
+    'country_banned': '&d&lGravity&f&lEmpire &8» &7Az országod tiltólistán van ezen a szerveren!'
+    'not_owner_error': '&d&lGravity&f&lEmpire &8» &cEz nem a te felhasználód. Kérlek válassz másik nevet!'
+    'invalid_name_case': '%valid a felhasználó neved nem? Akkor ne %invalid névvel próbálj feljönni.'
+    'quick_command': 'You used a command too fast! Please, join the server again and wait more before using any command.'
+# Email
+'email':
+    'add_email_request': '&3Kérlek rendeld hozzá a felhasználódhoz az email címedet /email add <email címed> <email címed ismét>'
+    'usage_email_add': '&d&lGravity&f&lEmpire &8» &cHasználat: /email add <email> <email ismét>'
+    'usage_email_change': '&d&lGravity&f&lEmpire &8» &cHasználat: /email change <régi email> <új email>'
+    'new_email_invalid': '&d&lGravity&f&lEmpire &8» &cHibás az új email cím, próbáld újra!'
+    'old_email_invalid': '&d&lGravity&f&lEmpire &8» &cHibás a régi email cím, próbáld újra!'
+    'invalid': '&d&lGravity&f&lEmpire &8» &cHibás az email cím, próbáld újra!'
+    'added': '&d&lGravity&f&lEmpire &8» &2Az email címed rögzítése sikeresen megtörtént!'
+    'add_not_allowed': '&cAdding email was not allowed.'
+    'request_confirmation': '&d&lGravity&f&lEmpire &8» &cKérlek ellenőrízd az email címedet!'
+    'changed': '&d&lGravity&f&lEmpire &8» &2Az email cím cseréje sikeresen megtörtént!'
+    'change_not_allowed': '&cChanging email was not allowed.'
+    'email_show': '&d&lGravity&f&lEmpire &8» &2A jelenlegi email-ed a következő: &f%email'
+    'no_email_for_account': '&2Ehhez a felhasználóhoz jelenleg még nincs email hozzárendelve.'
+    'already_used': '&4Ez az email cím már használatban van!'
+    'incomplete_settings': 'Hiba: nem lett beállítva az össze szükséges beállítás az email küldéshez. Vedd fel a kapcsolatot egy Adminnal.'
+    'send_failure': 'Nem sikerült elküldeni az emailt. Lépj kapcsolatba egy Adminnal.'
+    'change_password_expired': 'Ezzel a paranccsal nem tudod megváltoztatni a jelszavad már.'
+    'email_cooldown_error': '&cEgy emailt már kiküldtünk. Következő email küldése előtt várnod kell: %time.'
+# Password recovery by email
+'recovery':
+    'forgot_password_hint': '&3Ha elfelejtetted a jelszavad, használd az: /email recovery <regisztrált email címed>'
+    'command_usage': '&d&lGravity&f&lEmpire &8» &cHasználat: /email recovery <email>'
+    'email_sent': '&d&lGravity&f&lEmpire &8» &2A jelszó visszaállításhoz szükséges emailt elküldtük! Ellenőrízd a leveleidet!'
+    'code':
+        'code_sent': '&d&lGravity&f&lEmpire &8» &7A jelszavad visszaállításához szükséges kódot sikeresen kiküldtük az email címedre!'
+        'incorrect': '&d&lGravity&f&lEmpire &8» &7A visszaállító kód helytelen volt! Még %count lehetőséged maradt.'
+        'tries_exceeded': '&d&lGravity&f&lEmpire &8» &7Elérted a próbálkozások maximális számát. Használd a következő parancsot: /email recovery [email címed] egy új generálásához'
+        'correct': '&d&lGravity&f&lEmpire &8» A visszaállító kód helyes!'
+        'change_password': '&d&lGravity&f&lEmpire &8» Használd a következő parancsot: /email setpassword <új jelszó> hogy azonnal megváltoztasd a jelszavad.'
+# Captcha
+'captcha':
+    'usage_captcha': '&3A bejelentkezéshez CAPTCHA szükséges, kérlek használd a következő parancsot /captcha %captcha_code'
+    'wrong_captcha': '&cHibás CAPTCHA, kérlek írd be a következő parancsot: /captcha %captcha_code!'
+    'valid_captcha': '&2CAPTCHA sikeresen feloldva!'
+    'captcha_for_registration': 'To register you have to solve a captcha first, please use the command: /captcha %captcha_code'
+    'register_captcha_valid': '&2Valid captcha! You may now register with /register'
+# Verification code
+'verification':
+    'code_required': '&3This command is sensitive and requires an email verification! Check your inbox and follow the email''s instructions.'
+    'command_usage': '&cUsage: /verification <code>'
+    'incorrect_code': '&cIncorrect code, please type "/verification <code>" into the chat, using the code you received by email'
+    'success': '&2Your identity has been verified! You can now execute all commands within the current session!'
+    'already_verified': '&2You can already execute every sensitive command within the current session!'
+    'code_expired': '&3Your code has expired! Execute another sensitive command to get a new code!'
+    'email_needed': '&3To verify your identity you need to link an email address with your account!!'
+# Time units
+'time':
+    'second': 'másodperc'
+    'seconds': 'másodperc'
+    'minute': 'perc'
+    'minutes': 'perc'
+    'hour': 'óra'
+    'hours': 'óra'
+    'day': 'nap'
+    'days': 'nap'
+# Two-factor authentication
+'two_factor':
+    'code_created': '&d&lGravity&f&lEmpire &8» &7A te titkos kódod a következő: %code. Vagy skenneld be a következő oldalról: %url'
+    'confirmation_required': 'Please confirm your code with /2fa confirm <code>'
+    'code_required': 'Please submit your two-factor authentication code with /2fa code <code>'
+    'already_enabled': 'Two-factor authentication is already enabled for your account!'
+    'enable_error_no_code': 'No 2fa key has been generated for you or it has expired. Please run /2fa add'
+    'enable_success': 'Successfully enabled two-factor authentication for your account'
+    'enable_error_wrong_code': 'Wrong code or code has expired. Please run /2fa add'
+    'not_enabled_error': 'Two-factor authentication is not enabled for your account. Run /2fa add'
+    'removed_success': 'Successfully removed two-factor auth from your account'
+    'invalid_code': 'Invalid code!'
