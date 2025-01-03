@@ -24,10 +24,9 @@ This repository hosts the configuration files and setup instructions for the Gra
 ### Developers
 This server setup and Gravity Empire mod configuration were developed by:
 
-- [@Yoghurt1337](https://www.instagram.com/sz.bence1337/) (Discord: nightyouth)
-- [@hrvht__mark](https://www.instagram.com/hrvht__mark/) (Discord: .seti_)
-- Some Plugin made by [@Coxy_Senpai aka s_batorr](https://www.instagram.com/s_batorr/)
-- [Yoghurts Private Server](https://discord.gg/g5FqUBXpJ9)
+- [@Yoghurt1337](https://www.instagram.com/sz.bence1337/) (Discord: cashflareangel1337)
+- [@hrvht__mark](https://www.instagram.com/hrvth__mark_/) 
+- Some Plugin made by [@Coxy_Senpai aka s_batorr](https://www.instagram.com/404) current ig unknown
 ### Note
 Please be aware that this server is a stopped project from 2021, and the mod is considered half done. As a result, we cannot provide any support for issues encountered while using it.
 
